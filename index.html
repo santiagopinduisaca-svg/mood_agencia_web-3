@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#aeb6af">
+<meta name="description" content="Mood, agencia creativa. Break to impact.">
+<title>Mood — Break to impact</title>
+<style>
+:root{--sage:#aeb6af;--paper:#f6f6f3;--ink:#171817;--soft:#dfe7e1;--mid:#c5cdc6;--muted:#737a74;--radius:22px;--max:1060px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--sage);color:var(--ink);font-family:Inter,Helvetica,Arial,sans-serif;letter-spacing:-.035em}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 36px));margin-inline:auto}.site-nav{position:sticky;top:0;z-index:50;background:#aeb6afdb;backdrop-filter:blur(20px);border-bottom:1px solid #ffffff50}.nav-inner{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:27px;font-weight:700;letter-spacing:-.09em;display:flex;align-items:center;gap:9px}.logo-mark{display:inline-grid;place-items:center;width:27px;height:27px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:15px;font-weight:500;letter-spacing:-.04em}.nav-links{display:flex;gap:24px;align-items:center;font-size:11px;letter-spacing:.02em}.nav-links a{opacity:.7;transition:opacity .2s}.nav-links a:hover{opacity:1}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border:1px solid #17181755;padding:10px 15px;border-radius:999px;font-size:10px;letter-spacing:.015em;transition:transform .25s,background .25s,color .25s;cursor:pointer;background:transparent}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper)}.menu{display:none;background:none;border:0;font-size:23px}
+main{padding:28px 0 0}.panel{margin:0 auto 18px;width:min(var(--max),calc(100% - 36px));overflow:hidden}.welcome{background:var(--paper);min-height:330px;padding:30px 5.5%;position:relative;display:flex;flex-direction:column;justify-content:space-between}.topline{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}.tag{border:1px solid #25272570;border-radius:99px;padding:5px 11px;font-size:8px;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}.welcome-copy{max-width:750px;text-align:center;align-self:center;font-size:clamp(27px,4.6vw,52px);line-height:.99;letter-spacing:-.075em;font-weight:450;margin:16px auto 18px;position:relative;z-index:2}.welcome-copy span{color:#aab0ab}.welcome-bottom{display:flex;justify-content:space-between;align-items:end;gap:15px;position:relative;z-index:2}.welcome-bottom p{font-size:10px;color:var(--muted);max-width:240px;margin:0}.arrow-circle{border:1px solid #17181760;border-radius:50%;width:35px;height:35px;display:grid;place-items:center;font-size:16px;transition:transform .3s}.arrow-circle:hover{transform:rotate(-45deg)}.welcome-art{position:absolute;right:6%;top:12%;width:120px;height:75px;opacity:.65;transform:rotate(-8deg)}.welcome-art svg{width:100%;height:100%}.dark-intro{background:var(--ink);color:var(--paper);min-height:285px;padding:25px 4.5%;display:grid;grid-template-columns:1fr 1fr;position:relative}.dark-intro .tag{border-color:#ffffff6b}.section-number{font-size:clamp(100px,18vw,190px);line-height:.72;letter-spacing:-.1em;font-weight:400;text-align:right;color:#e7ece7;align-self:start}.intro-title{align-self:end;font-size:clamp(39px,6.4vw,72px);line-height:.83;letter-spacing:-.09em;font-weight:450;margin:0;display:flex;align-items:end;gap:13px}.intro-right{position:absolute;right:5%;bottom:25px;text-align:right;max-width:170px;font-size:9px;line-height:1.35;color:#c0c5c0}.intro-right strong{display:block;font-size:7px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;color:#fff}.intro-tag{position:absolute;top:25px;left:4.5%}.bento{background:var(--paper);padding:10px;display:grid;grid-template-columns:1.05fr 1.15fr .78fr;grid-template-rows:150px 150px;gap:9px}.bento-card{border-radius:15px;overflow:hidden;position:relative;min-height:0}.bento-hero{background:#151615;color:white;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;grid-column:1;grid-row:1}.bento-hero strong{font-size:clamp(22px,3vw,35px);font-weight:450;letter-spacing:-.06em}.bento-hero small{font-size:9px;color:#bfc5bf}.photo{background:#cbd0cb;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(100%);transition:transform .8s,filter .6s}.photo:hover img{transform:scale(1.06);filter:grayscale(25%)}.photo-top{grid-column:2/4;grid-row:1}.photo-bottom{grid-column:1/2;grid-row:2}.mini-stat{padding:17px;display:flex;flex-direction:column;justify-content:space-between;background:var(--soft)}.mini-stat strong{font-size:clamp(23px,3vw,36px);font-weight:450;line-height:.88;letter-spacing:-.08em}.mini-stat span{font-size:9px;letter-spacing:0;max-width:100px;line-height:1.2;color:#4e5650}.mini-stat.dark{background:#aeb6af}.mini-stat:nth-of-type(5){grid-column:2;grid-row:2}.mini-stat:nth-of-type(6){grid-column:3;grid-row:2}.editorial{background:var(--paper);padding:25px 4.5% 35px}.editorial-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:45px}.editorial-head small{font-size:7px;letter-spacing:.08em;text-transform:uppercase}.editorial-title{font-size:clamp(24px,3.6vw,42px);line-height:.92;letter-spacing:-.075em;font-weight:450;margin:0 0 14px}.cards-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:end}.editorial-card{min-height:150px;border-radius:16px;padding:17px;background:var(--soft);display:flex;flex-direction:column;justify-content:space-between}.editorial-card:nth-child(2){background:#211d1e;color:#f5f5f1;min-height:170px}.editorial-card:nth-child(3){background:transparent;padding:0;min-height:120px}.editorial-card p{font-size:10px;line-height:1.45;margin:10px 0 0;letter-spacing:-.01em}.editorial-card ul{padding-left:12px;margin:8px 0 0;font-size:8px;line-height:1.8;letter-spacing:0}.editorial-card .editorial-title{margin:0}.section-block{padding:105px 0}.section-heading{display:grid;grid-template-columns:.5fr 1.5fr;gap:35px;align-items:start;margin-bottom:35px}.index{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#4e5650;padding-top:9px}.section-heading h2{font-size:clamp(36px,6vw,70px);line-height:.9;letter-spacing:-.085em;font-weight:450;margin:0;max-width:720px}.section-heading h2 em{font-style:normal;color:#f6f6f3}.body-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.info-card{background:#f6f6f3;border-radius:var(--radius);padding:26px;min-height:210px;transition:transform .3s,box-shadow .3s}.info-card:hover{transform:translateY(-4px);box-shadow:0 18px 35px #34423918}.info-card.dark{background:var(--ink);color:var(--paper)}.info-card h3{font-size:23px;letter-spacing:-.06em;font-weight:500;margin:0 0 15px}.info-card p{font-size:13px;line-height:1.6;letter-spacing:-.015em;color:#606761;margin:0}.info-card.dark p{color:#c2c8c2}.info-card.wide{grid-column:1/-1;min-height:170px}.manifesto{background:var(--paper);padding:clamp(30px,7vw,80px);border-radius:var(--radius)}.manifesto .label{font-size:9px;text-transform:uppercase;letter-spacing:.1em}.manifesto h2{font-size:clamp(35px,6.2vw,72px);line-height:.95;letter-spacing:-.085em;font-weight:450;max-width:850px;margin:32px 0}.manifesto h2 span{color:#9ba49d}.manifesto p{max-width:700px;font-size:15px;line-height:1.8;letter-spacing:-.015em;color:#565e57}.manifesto-end{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #d5d9d4;padding-top:22px;margin-top:40px}.manifesto-end strong{font-size:clamp(20px,3vw,32px);letter-spacing:-.06em;font-weight:500}.manifesto-end span{font-size:10px;text-transform:uppercase;letter-spacing:.1em}.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.value{background:#f6f6f3;border-radius:16px;padding:20px;min-height:190px}.value b{display:block;font-size:11px;margin:0 0 35px;font-weight:500}.value p{font-size:12px;line-height:1.5;color:#626961;letter-spacing:-.01em;margin:0}.quote-banner{background:#171817;color:#f6f6f3;padding:clamp(28px,6vw,65px);border-radius:var(--radius);display:flex;align-items:end;justify-content:space-between;gap:25px}.quote-banner h2{font-size:clamp(40px,7vw,85px);line-height:.82;letter-spacing:-.09em;font-weight:450;margin:20px 0 0}.quote-banner h2 span{color:#aeb6af}.quote-banner p{max-width:210px;font-size:12px;line-height:1.55;color:#c3c8c2;margin:0}.footer{padding:28px 0 35px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid #ffffff65;padding-top:22px}.footer small{font-size:10px;color:#454c46}.footer-links{display:flex;gap:17px;font-size:10px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}.reveal.in{opacity:1;transform:translateY(0)}.float{animation:float 7s ease-in-out infinite}.pulse{animation:pulse 6s ease-in-out infinite}.marquee{overflow:hidden;white-space:nowrap;border-top:1px solid #ffffff70;border-bottom:1px solid #ffffff70;padding:14px 0;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.marquee-track{display:inline-block;animation:marquee 26s linear infinite}.marquee-track span{margin:0 25px}.cursor-glow{position:fixed;inset:0;pointer-events:none;z-index:40;background:radial-gradient(350px circle at var(--mx,50%) var(--my,50%),#ffffff28,transparent 65%);mix-blend-mode:soft-light;opacity:.65}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-8px) rotate(-4deg)}}@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:760px){.nav-links{display:none;position:absolute;top:67px;left:18px;right:18px;background:#f6f6f3;padding:20px;border-radius:16px;box-shadow:0 12px 35px #0002;flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu{display:block}.nav-cta{display:none}.welcome{min-height:300px;padding:23px}.welcome-art{width:85px;top:14%;right:5%}.welcome-copy{font-size:clamp(25px,7vw,42px);margin:22px 0}.dark-intro{min-height:245px;grid-template-columns:1fr;padding:22px}.intro-tag{top:22px;left:22px}.section-number{font-size:125px;position:absolute;right:20px;top:62px}.intro-title{position:absolute;left:22px;bottom:24px;font-size:48px}.intro-right{right:22px;bottom:25px;max-width:120px;font-size:8px}.bento{grid-template-columns:1fr 1fr;grid-template-rows:130px 130px 120px}.bento-hero{grid-column:1;grid-row:1}.photo-top{grid-column:2;grid-row:1}.photo-bottom{grid-column:1;grid-row:2}.mini-stat:nth-of-type(5){grid-column:2;grid-row:2}.mini-stat:nth-of-type(6){grid-column:1/3;grid-row:3}.editorial{padding:23px}.editorial-head{margin-bottom:32px}.cards-3{grid-template-columns:1fr 1fr}.editorial-card:nth-child(3){grid-column:1/-1;min-height:115px}.section-block{padding:70px 0}.section-heading{grid-template-columns:1fr;gap:12px;margin-bottom:25px}.body-grid{grid-template-columns:1fr}.info-card.wide{grid-column:auto}.values-grid{grid-template-columns:1fr 1fr}.quote-banner{align-items:flex-start;flex-direction:column}.quote-banner p{max-width:390px}.footer-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:430px){.panel{width:calc(100% - 20px);margin-bottom:10px}.wrap{width:calc(100% - 28px)}main{padding-top:10px}.welcome{min-height:285px}.welcome-bottom p{max-width:180px}.bento{padding:7px;gap:7px;grid-template-rows:115px 115px 105px}.bento-card{border-radius:12px}.mini-stat{padding:12px}.mini-stat strong{font-size:25px}.editorial{padding:18px}.cards-3{grid-template-columns:1fr}.editorial-card:nth-child(2){min-height:145px}.editorial-card:nth-child(3){grid-column:auto;min-height:100px}.values-grid{grid-template-columns:1fr}.value{min-height:130px}.value b{margin-bottom:20px}.manifesto h2{margin:24px 0}.manifesto p{font-size:14px}.manifesto-end{align-items:flex-start;flex-direction:column;gap:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* LIQUID GLASS + MOTION UPGRADE */
+:root{--glass:rgba(255,255,255,.34);--glass-edge:rgba(255,255,255,.62);--glass-shadow:0 18px 55px rgba(35,46,38,.12)}
+body{isolation:isolate;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:-1;pointer-events:none;width:44vw;height:44vw;min-width:320px;min-height:320px;border-radius:50%;filter:blur(65px);opacity:.35;mix-blend-mode:screen;animation:liquidDrift 19s ease-in-out infinite alternate}
+body::before{top:5vh;left:-15vw;background:radial-gradient(circle at 35% 35%,#f7fff8 0,rgba(220,236,225,.8) 28%,rgba(174,182,175,0) 70%)}
+body::after{right:-15vw;top:40vh;background:radial-gradient(circle at 40% 40%,rgba(245,248,244,.95),rgba(197,211,200,.65) 34%,rgba(174,182,175,0) 70%);animation-delay:-8s}
+@keyframes liquidDrift{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(8vw,5vh,0) scale(1.12)}100%{transform:translate3d(-3vw,11vh,0) scale(.94)}}
+.site-nav{background:rgba(224,230,224,.48);backdrop-filter:blur(28px) saturate(165%);-webkit-backdrop-filter:blur(28px) saturate(165%);border-bottom:1px solid rgba(255,255,255,.48);box-shadow:0 8px 32px rgba(33,43,35,.05)}
+.logo-mark{box-shadow:inset 0 1px 1px #ffffff5c,0 5px 15px #17181720}
+.nav-cta,.btn,.tag,.arrow-circle{backdrop-filter:blur(14px) saturate(145%);-webkit-backdrop-filter:blur(14px) saturate(145%);background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.68);box-shadow:inset 0 1px 0 rgba(255,255,255,.65),0 5px 18px rgba(35,46,38,.05)}
+.panel,.info-card,.manifesto,.value,.quote-banner{position:relative;isolation:isolate}
+.welcome,.bento,.editorial,.info-card,.manifesto,.value{border:1px solid rgba(255,255,255,.62);box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,.75)}
+.welcome,.editorial{background:rgba(250,251,248,.78);backdrop-filter:blur(24px) saturate(135%);-webkit-backdrop-filter:blur(24px) saturate(135%)}
+.bento{background:rgba(250,251,248,.68);backdrop-filter:blur(22px) saturate(140%);-webkit-backdrop-filter:blur(22px) saturate(140%)}
+.welcome::before,.editorial::before,.info-card::before,.manifesto::before,.value::before,.quote-banner::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.5),transparent 28%,transparent 68%,rgba(255,255,255,.12));opacity:.65;z-index:-1}
+.dark-intro,.bento-hero,.editorial-card:nth-child(2),.info-card.dark,.quote-banner{box-shadow:0 18px 50px rgba(21,24,21,.13),inset 0 1px 0 rgba(255,255,255,.12)}
+.info-card,.value{background:rgba(249,250,247,.64);backdrop-filter:blur(22px) saturate(145%);-webkit-backdrop-filter:blur(22px) saturate(145%);transition:transform .45s cubic-bezier(.2,.75,.25,1),box-shadow .45s,border-color .4s}
+.info-card.dark{background:rgba(23,24,23,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.info-card:hover,.value:hover{transform:translateY(-7px) scale(1.012);box-shadow:0 24px 60px rgba(35,46,38,.17),inset 0 1px 0 rgba(255,255,255,.8);border-color:rgba(255,255,255,.9)}
+.bento-card{transition:transform .45s cubic-bezier(.2,.75,.25,1),box-shadow .4s}
+.bento-card:hover{box-shadow:0 14px 32px rgba(24,30,25,.15)}
+.photo img{transform:scale(1.015);transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .8s}
+.photo:hover img{transform:scale(1.09);filter:grayscale(15%)}
+.welcome-copy{animation:headlineArrive 1.1s cubic-bezier(.2,.75,.2,1) both}
+.welcome-art{filter:drop-shadow(0 10px 14px rgba(20,25,20,.1))}
+.section-number{text-shadow:0 8px 30px rgba(255,255,255,.08)}
+.marquee{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.cursor-glow{background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.42),rgba(255,255,255,.1) 35%,transparent 72%);mix-blend-mode:soft-light;opacity:.9;transition:background .08s linear}
+.glass-orb{position:absolute;pointer-events:none;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.8),rgba(255,255,255,.22) 20%,rgba(220,231,222,.12) 45%,rgba(255,255,255,.03) 65%,transparent 70%);border:1px solid rgba(255,255,255,.38);box-shadow:inset -10px -12px 25px rgba(130,148,134,.12),inset 8px 8px 18px rgba(255,255,255,.35),0 18px 45px rgba(48,61,51,.08);backdrop-filter:blur(3px);animation:orbFloat 9s ease-in-out infinite;opacity:.6}
+@keyframes orbFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-18px) rotate(9deg)}}
+@keyframes headlineArrive{from{opacity:0;transform:translateY(18px);filter:blur(8px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+.reveal{transition:opacity .9s ease,transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease;filter:blur(4px)}.reveal.in{filter:blur(0)}
+@media(max-width:760px){.nav-links.open{background:rgba(246,247,243,.88);backdrop-filter:blur(28px) saturate(160%);-webkit-backdrop-filter:blur(28px) saturate(160%);border:1px solid rgba(255,255,255,.8)}body::before,body::after{opacity:.23}.glass-orb{width:100px;height:100px}}
+@media(prefers-reduced-motion:reduce){body::before,body::after,.glass-orb,.welcome-copy{animation:none!important}.reveal{filter:none!important}}
+
+
+/* LIQUID GLASS — capas orgánicas, reflejos y profundidad */
+:root{--glass:rgba(255,255,255,.25);--glass-line:rgba(255,255,255,.62);--glass-shadow:0 24px 70px rgba(40,55,46,.12)}
+body{background:radial-gradient(ellipse at 12% 8%,#d5ded8 0,transparent 33%),radial-gradient(ellipse at 88% 38%,#c6d1c8 0,transparent 28%),linear-gradient(145deg,#aeb8b0,#c5cec6 48%,#a7b2aa);background-attachment:fixed;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;pointer-events:none;z-index:-1;border-radius:50%;filter:blur(2px);mix-blend-mode:screen;opacity:.42}
+body::before{width:42vw;height:42vw;left:-15vw;top:20vh;background:radial-gradient(circle at 35% 30%,#fff 0,rgba(255,255,255,.25) 18%,rgba(255,255,255,0) 68%);animation:orb-drift 21s ease-in-out infinite alternate}
+body::after{width:50vw;height:50vw;right:-20vw;top:100vh;background:radial-gradient(circle at 45% 45%,rgba(255,255,255,.8),rgba(218,235,223,.2) 25%,transparent 68%);animation:orb-drift 26s ease-in-out infinite alternate-reverse}
+.site-nav{background:rgba(225,232,226,.38);backdrop-filter:blur(28px) saturate(165%);-webkit-backdrop-filter:blur(28px) saturate(165%);border-bottom:1px solid rgba(255,255,255,.5);box-shadow:0 8px 32px #59665a0b}
+.panel,.manifesto,.info-card,.value,.editorial-card,.quote-banner,.bento{border:1px solid rgba(255,255,255,.52);box-shadow:var(--glass-shadow);position:relative}
+.panel{overflow:visible;border-radius:30px;background:rgba(255,255,255,.16);backdrop-filter:blur(24px) saturate(155%);-webkit-backdrop-filter:blur(24px) saturate(155%);isolation:isolate;transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+.panel::before,.manifesto::before,.info-card::before,.value::before,.quote-banner::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.48),transparent 28%,transparent 65%,rgba(255,255,255,.13));opacity:.65;z-index:0}
+.panel>*{position:relative;z-index:1}.welcome{margin-left:max(18px,calc((100% - var(--max))/2 + 8px));width:min(calc(var(--max) - 16px),calc(100% - 44px));min-height:390px;background:linear-gradient(135deg,rgba(255,255,255,.57),rgba(255,255,255,.18) 55%,rgba(237,246,239,.32));border-radius:42px 28px 48px 28px;backdrop-filter:blur(30px) saturate(170%);-webkit-backdrop-filter:blur(30px) saturate(170%)}
+.welcome:after{content:"";position:absolute;inset:1px;border-radius:inherit;pointer-events:none;background:linear-gradient(115deg,transparent 20%,rgba(255,255,255,.46) 33%,transparent 44%);background-size:220% 100%;animation:glass-sweep 9s ease-in-out infinite}
+.welcome-copy{font-size:clamp(35px,6.2vw,76px);max-width:900px;animation:copy-in 1.1s cubic-bezier(.16,1,.3,1) both}.welcome-copy span{color:#7e8d81}.welcome-art{width:150px;height:100px;right:9%;top:10%;filter:drop-shadow(0 12px 12px #53635726)}
+.dark-intro{background:linear-gradient(130deg,rgba(23,26,23,.94),rgba(42,49,43,.78));border:1px solid rgba(255,255,255,.38);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:28px 48px 28px 44px;min-height:310px;margin-left:max(26px,calc((100% - var(--max))/2 + 25px));width:min(calc(var(--max) - 25px),calc(100% - 52px));box-shadow:0 28px 70px #1c251e2b}
+.bento{background:rgba(247,249,246,.3);backdrop-filter:blur(25px) saturate(150%);-webkit-backdrop-filter:blur(25px) saturate(150%);padding:13px;border-radius:34px 24px 42px 25px;grid-template-rows:170px 170px;gap:12px}
+.bento-card{border:1px solid #ffffff55;border-radius:20px;transition:transform .55s cubic-bezier(.2,.8,.2,1),box-shadow .4s}.bento-hero{background:linear-gradient(145deg,rgba(22,25,22,.93),rgba(58,68,59,.84))}.mini-stat{background:rgba(238,244,238,.69);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.mini-stat.dark{background:rgba(156,171,159,.62)}
+.editorial{background:rgba(248,249,246,.43);backdrop-filter:blur(26px) saturate(150%);-webkit-backdrop-filter:blur(26px) saturate(150%);border-radius:30px 42px 28px 40px;border:1px solid #fff8}
+.section-block{position:relative}.section-heading{margin-bottom:43px}.info-card,.value{background:rgba(250,251,248,.62);backdrop-filter:blur(22px) saturate(155%);-webkit-backdrop-filter:blur(22px) saturate(155%);border:1px solid rgba(255,255,255,.72);box-shadow:0 14px 40px #4352470b;overflow:hidden}.info-card.dark{background:linear-gradient(140deg,rgba(24,27,24,.94),rgba(48,56,49,.85));border-color:#ffffff40}.info-card:hover,.value:hover{transform:translateY(-7px) rotate(-.25deg);box-shadow:0 24px 48px #4352471b}.manifesto{background:rgba(250,251,248,.62);backdrop-filter:blur(28px) saturate(155%);-webkit-backdrop-filter:blur(28px) saturate(155%);overflow:hidden}.quote-banner{background:linear-gradient(135deg,rgba(23,24,23,.94),rgba(47,55,48,.88));backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);overflow:hidden}.tag,.btn,.nav-cta{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+/* Nueva portada de equipo: manifiesto breve + roles */
+.roles-intro{width:min(1140px,calc(100% - 36px));margin:28px auto 52px;position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(24px,5vw,72px);align-items:center;min-height:450px;padding:clamp(28px,5.5vw,68px);border:1px solid rgba(255,255,255,.65);border-radius:44px 28px 50px 30px;background:linear-gradient(135deg,rgba(255,255,255,.53),rgba(255,255,255,.16) 60%,rgba(237,246,239,.32));backdrop-filter:blur(32px) saturate(165%);-webkit-backdrop-filter:blur(32px) saturate(165%);box-shadow:0 30px 90px #3544381a;isolation:isolate;overflow:hidden}
+.roles-intro:before{content:"";position:absolute;inset:-1px;z-index:-1;background:radial-gradient(ellipse at 78% 14%,rgba(255,255,255,.8),transparent 35%),linear-gradient(120deg,transparent 28%,rgba(255,255,255,.27) 42%,transparent 53%);background-size:auto,220% 100%;animation:glass-sweep 12s ease-in-out infinite}
+.roles-intro:after{content:"m";position:absolute;right:4%;top:-.25em;font-size:clamp(250px,40vw,520px);line-height:1;font-weight:700;letter-spacing:-.15em;color:#fff;opacity:.12;z-index:-1;transform:rotate(-10deg);animation:mark-drift 13s ease-in-out infinite alternate}
+.roles-copy .tag{display:inline-flex;margin-bottom:25px}.roles-copy h1{font-size:clamp(64px,10vw,132px);line-height:.72;letter-spacing:-.105em;font-weight:450;margin:0 0 30px}.roles-copy h1 span{display:block;color:#78877b}.roles-copy p{font-size:clamp(14px,1.4vw,17px);line-height:1.65;letter-spacing:-.02em;max-width:490px;margin:0;color:#414a42}.roles-copy .roles-note{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#69756b;margin-top:28px}
+.roles-board{align-self:stretch;display:flex;flex-direction:column;justify-content:center;gap:8px;position:relative}.roles-heading{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 9px;padding:0 4px}.roles-heading span:last-child{opacity:.6}.role-row{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:center;padding:13px 15px;border:1px solid rgba(255,255,255,.76);border-radius:15px 22px 15px 22px;background:rgba(255,255,255,.32);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);box-shadow:0 7px 22px #43524708;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .35s,box-shadow .35s;animation:role-rise .8s both;animation-delay:calc(var(--i)*90ms)}.role-row:nth-child(even){margin-left:18px;background:rgba(255,255,255,.22)}.role-row:hover{transform:translateX(-5px) scale(1.015);background:rgba(255,255,255,.65);box-shadow:0 12px 30px #43524714}.role-num{font-size:10px;color:#77857a}.role-data b{display:block;font-size:12px;font-weight:600;letter-spacing:-.025em}.role-data span{display:block;font-size:10px;color:#626d64;margin-top:3px;letter-spacing:0}.glass-orb{position:absolute;width:130px;height:130px;border-radius:50%;right:43%;top:-35px;background:radial-gradient(circle at 30% 25%,#ffffffd9, #ffffff45 22%,#d9e6db35 50%,#ffffff0a 70%);border:1px solid #ffffff8a;box-shadow:inset -12px -14px 28px #75887916,0 18px 35px #53645712;backdrop-filter:blur(3px);animation:orb-drift 10s ease-in-out infinite alternate;pointer-events:none}
+@keyframes glass-sweep{0%,15%{background-position:0 0,0 0}65%,100%{background-position:0 0,100% 0}}@keyframes orb-drift{0%{transform:translate3d(0,0,0) rotate(0deg)}100%{transform:translate3d(24px,-28px,0) rotate(12deg)}}@keyframes mark-drift{0%{transform:translateY(0) rotate(-10deg)}100%{transform:translateY(18px) rotate(-3deg)}}@keyframes copy-in{from{opacity:0;transform:translateY(24px);filter:blur(8px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}@keyframes role-rise{from{opacity:0;transform:translateY(16px) scale(.98);filter:blur(5px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@media(max-width:760px){.roles-intro{grid-template-columns:1fr;gap:32px;padding:30px 23px;margin-top:18px;border-radius:30px 22px 34px 22px}.roles-copy h1{font-size:clamp(68px,18vw,110px)}.roles-copy p{font-size:14px}.roles-board{max-width:100%}.role-row:nth-child(even){margin-left:8px}.glass-orb{right:5%;top:30%;width:90px;height:90px}.welcome,.dark-intro{margin-left:auto;margin-right:auto;width:min(var(--max),calc(100% - 36px));border-radius:27px;min-height:300px}.welcome{min-height:360px}.bento{grid-template-rows:130px 130px;padding:8px;gap:8px;border-radius:26px}.bento-card{border-radius:14px}.editorial{border-radius:25px;padding:24px 5%}.panel{margin-bottom:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+.dark-intro .intro-tag {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+</style>
+</head>
+<body>
+<div class="cursor-glow" aria-hidden="true"></div>
+<header class="site-nav"><div class="wrap nav-inner">
+<a class="logo" href="#inicio"><span class="logo-mark">m</span>mood<span style="font-weight:400">.</span></a>
+<nav class="nav-links" id="navLinks"><a href="#roles">Equipo</a><a href="#concepto">Concepto</a><a href="#filosofia">Filosofía</a><a href="#objetivos">Objetivos</a><a href="#valores">Valores</a><a href="#manifiesto">Manifiesto</a></nav>
+<a class="nav-cta" href="#contacto">Conoce Mood <span>↗</span></a><button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+</div></header>
+<main id="inicio">
+<section class="roles-intro reveal" id="roles" aria-labelledby="mood-title">
+<div class="glass-orb" aria-hidden="true"></div>
+<div class="roles-copy"><span class="tag">Agencia creativa · Universidad de Cuenca</span><h1 id="mood-title">Find your <span>mood.</span></h1><p>Mood es una agencia creativa que nace en la materia de Agencias, en noveno ciclo de Diseño Gráfico de la Universidad de Cuenca. La idea central es descubrir el mood de cada marca y convertirlo en una identidad y una comunicación propias.</p><div class="roles-note">Personalidades distintas. Una misma energía. Ideas con intención.</div></div>
+<div class="roles-board"><div class="roles-heading"><span>El equipo Mood</span><span>Roles / 2026</span></div>
+<div class="role-row" style="--i:1"><span class="role-num">01</span><div class="role-data"><b>Cuentas</b><span>Mateo Bustamante</span></div></div>
+<div class="role-row" style="--i:2"><span class="role-num">02</span><div class="role-data"><b>Director creativo / Arte</b><span>Frankiiiiiiiiii</span></div></div>
+<div class="role-row" style="--i:3"><span class="role-num">03</span><div class="role-data"><b>Diseño / Contenido</b><span>Todos</span></div></div>
+<div class="role-row" style="--i:4"><span class="role-num">04</span><div class="role-data"><b>Producción / Tráfico</b><span>Oscarin</span></div></div>
+<div class="role-row" style="--i:5"><span class="role-num">05</span><div class="role-data"><b>Gestión de proyecto</b><span>Sebastian Vega</span></div></div>
+<div class="role-row" style="--i:6"><span class="role-num">06</span><div class="role-data"><b>Administración / Finanzas</b><span>Alex Mullo</span></div></div>
+</div></section>
+<section class="panel welcome reveal">
+<div class="topline"><span class="tag">Agencia creativa · Cuenca, Ecuador</span><span class="tag">Est. 2026</span></div>
+<div class="welcome-art float" aria-hidden="true"><svg viewBox="0 0 180 100" fill="none"><path d="M12 60L150 60L170 44L151 74L12 60Z" stroke="#171817" stroke-width="1.5"/><path d="M48 57L80 15L125 57M80 15L92 57M35 57L53 40L65 57M18 67L158 67" stroke="#171817" stroke-width="1.5"/><path d="M8 76Q70 87 165 76" stroke="#aeb6af" stroke-width="2"/></svg></div>
+<h1 class="welcome-copy">Descubrimos el mood de cada marca<span> y lo convertimos en algo imposible de ignorar.</span></h1>
+<div class="welcome-bottom"><p>Creatividad con humanidad, tecnología y estrategia. Para comunicar con intención y romper para impactar.</p><a class="arrow-circle" href="#concepto" aria-label="Explorar Mood">↘</a></div>
+</section>
+<section class="panel dark-intro reveal">
+<span class="tag intro-tag">Nuestra esencia</span><div class="section-number pulse">01</div>
+<h2 class="intro-title">Break to<br>impact.<a class="arrow-circle" href="#concepto" style="color:#f6f6f3;border-color:#f6f6f380;font-size:13px;width:32px;height:32px;flex-shrink:0">↙</a></h2>
+<div class="intro-right"><strong>Más que una agencia creativa</strong>Entendemos las reglas, encontramos lo que hace única a cada marca y creamos nuevas formas de conectar.</div>
+</section>
+<section class="panel bento reveal" aria-label="Mood en cifras y perspectivas">
+<div class="bento-card bento-hero"><strong>Una marca.<br>Un mood.</strong><small>Una forma propia de expresarse.</small></div>
+<div class="bento-card photo photo-top"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Arquitectura contemporánea vista desde abajo" loading="lazy"></div>
+<div class="bento-card photo photo-bottom"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=85" alt="Arquitectura escultórica minimalista" loading="lazy"></div>
+<div class="bento-card mini-stat"><strong>Ideas<br>con intención</strong><span>Creatividad guiada por estrategia.</span></div>
+<div class="bento-card mini-stat dark"><strong>De aquí<br>al mundo</strong><span>Raíces en Ecuador. Mirada global.</span></div>
+</section>
+<section class="panel editorial reveal" id="concepto">
+<div class="editorial-head"><span class="tag">02 / La oportunidad</span><small>Identidad · Cultura · Comunicación</small></div>
+<div class="cards-3">
+<article class="editorial-card"><div><h2 class="editorial-title">Pain<br>points</h2><p>Marcas que comunican sin una personalidad clara, siguen tendencias pasajeras o no conectan con su público.</p></div><span class="tag" style="align-self:flex-start">El reto</span></article>
+<article class="editorial-card"><div><h2 class="editorial-title">Future<br>objectives</h2><p>Encontrar la esencia de cada marca y traducirla en una identidad coherente, reconocible y relevante.</p></div><span class="tag" style="align-self:flex-start">La visión</span></article>
+<article class="editorial-card"><div><h2 class="editorial-title">La idea</h2><p>Cada persona tiene un mood. Cada marca también. Nuestro trabajo es descubrirlo y darle forma.</p></div><span class="tag" style="align-self:flex-start">Mood</span></article>
+</div>
+</section>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Break to impact</span>✳<span>Humanity</span>✳<span>Creativity</span>✳<span>Technology</span>✳<span>Strategy</span>✳<span>Break to impact</span>✳<span>Humanity</span>✳<span>Creativity</span>✳<span>Technology</span>✳<span>Strategy</span>✳</div></div>
+<section class="section-block" id="filosofia"><div class="wrap">
+<div class="section-heading reveal"><span class="index">03 / Quiénes somos</span><h2>La diferencia está en cómo <em>vemos las cosas.</em></h2></div>
+<div class="body-grid">
+<article class="info-card reveal"><h3>Nombre y significado</h3><p>El nombre de la agencia es Mood. La palabra alude al estado de ánimo, la actitud y la atmósfera que una persona transmite. Aplicada a una marca, permite hablar de su personalidad, de cómo se expresa y de lo que hace sentir a quienes se relacionan con ella.
+</p></article>
+<article class="info-card dark reveal"><h3>Concepto de marca</h3><p>Cada persona tiene un mood y cada marca también. Nuestro trabajo es comprender su esencia, reconocer aquello que la diferencia y encontrar una forma de expresarlo. El mood de una marca nace de su historia, sus valores, su contexto y su relación con las personas; va más allá de una tendencia estética pasajera.</p></article>
+<article class="info-card dark reveal"><h3>Filosofía de trabajo</h3><p>Mood se construye desde la unión de personas con distintas personalidades, habilidades y formas de pensar. Esa variedad aporta una mirada multidisciplinaria que combina creatividad y criterio técnico. La diversidad cultural, la conexión entre Cuenca y otras regiones y el intercambio de ideas enriquecen la manera de abordar cada proyecto.</p></article>
+<article class="info-card reveal"><h3>La adaptación es parte de esta filosofía:</h3><p>entender cada marca antes de proponer soluciones. La idea del camaleón puede servir como metáfora de esa capacidad de adaptación, sin convertirse necesariamente en un símbolo literal.</p></article>
+<article class="info-card wide reveal"><h3>Propuesta de valor</h3><p>Descubrimos el mood de cada marca y lo traducimos en soluciones creativas con humanidad, tecnología y estrategia, para que comunique con claridad, se diferencie y conecte con su público.</p></article>
+</div></div></section>
+<section class="section-block" style="padding-top:10px" id="mision"><div class="wrap">
+<div class="section-heading reveal"><span class="index">04 / Dirección</span><h2>Lo que nos mueve.<br><em>Hacia dónde vamos.</em></h2></div>
+<div class="body-grid">
+<article class="info-card dark reveal"><h3>Misión</h3><p>Nutrir a cada marca con humanidad, creatividad, tecnología y estrategia, integrando distintas formas de pensar y metodologías de trabajo para construir su identidad, fortalecer su posicionamiento y ayudarla a liderar su segmento. Entendemos las reglas antes de romperlas para proponer soluciones con sentido.</p></article>
+<article class="info-card reveal"><h3>Visión</h3><p>Ser un estudio creativo con sede en Ecuador y alcance global, con un equipo preparado para trabajar con clientes internacionales. Aspiramos a un futuro en el que cada marca encuentre su propio mood y cuente con las herramientas, el tiempo y el acompañamiento necesarios para desafiar lo convencional e impactar en su nicho.</p></article>
+</div></div></section>
+<section class="section-block" style="padding-top:10px" id="objetivos"><div class="wrap">
+<div class="section-heading reveal"><span class="index">05 / Lo que buscamos</span><h2>Intención en cada <em>decisión.</em></h2></div>
+<div class="body-grid">
+<article class="info-card reveal"><h3>Objetivo general</h3><p>Desarrollar una agencia creativa capaz de identificar la personalidad de cada marca y transformarla en una comunicación diferenciada, mediante el trabajo colaborativo y la integración de diseño, creatividad, tecnología y estrategia.</p></article>
+<article class="info-card reveal"><h3>01 — Comprender cada marca</h3><p>Investigar su contexto, sus necesidades y su público para definir el mood que orientará las decisiones del proyecto.</p></article>
+<article class="info-card reveal"><h3>02 — Construir una identidad coherente</h3><p>Desarrollar para Mood un sistema verbal y visual que represente la diversidad del equipo y mantenga una personalidad reconocible.</p></article>
+<article class="info-card reveal"><h3>03 — Integrar capacidades</h3><p>Organizar los roles y aprovechar las habilidades creativas y técnicas de cada integrante durante el proceso de trabajo.</p></article>
+<article class="info-card reveal"><h3>04 — Proponer con intención</h3><p>Explorar soluciones que cuestionen lo convencional y puedan justificarse desde los objetivos de comunicación.</p></article>
+<article class="info-card reveal"><h3>05 — Fortalecer las relaciones</h3><p>Acompañar a los clientes con comunicación clara, compromiso y revisión conjunta de los resultados.</p></article>
+<article class="info-card wide reveal"><h3>Ámbitos de vinculación</h3><p>Las marcas, los medios y los influencers aparecen como posibles ámbitos de trabajo y colaboración. La selección de públicos prioritarios y servicios se concretará al definir el alcance de la agencia.</p></article>
+</div></div></section>
+<section class="section-block" style="padding-top:10px" id="valores"><div class="wrap">
+<div class="section-heading reveal"><span class="index">06 / Nuestra manera</span><h2>Valores y <em>Manifiesto.</em></h2></div>
+<div class="values-grid">
+<article class="value reveal"><b>01 / Curiosidad e innovación</b><p>Hacemos preguntas, exploramos referencias y probamos nuevas maneras de resolver problemas de comunicación.</p></article>
+<article class="value reveal"><b>02 / Compromiso y eficacia</b><p>Asumimos las responsabilidades del proyecto y buscamos soluciones que respondan a sus objetivos.</p></article>
+<article class="value reveal"><b>03 / Confianza e implicación</b><p>Trabajamos cerca del cliente, escuchamos su perspectiva y nos involucramos en el proceso de su marca.</p></article>
+<article class="value reveal"><b>04 / Experiencia y alcance</b><p>Aprendemos de cada proyecto, compartimos conocimientos y ampliamos nuestra capacidad de abordar distintos contextos y públicos.</p></article>
+</div></div></section>
+<section class="section-block" style="padding-top:10px" id="manifiesto"><div class="wrap">
+<div class="manifesto reveal"><span class="label">07 / Manifiesto Mood</span>
+<h2>Hay personas que ven el mundo tal como es. <span>Y luego estamos quienes imaginamos cómo podría ser.</span></h2>
+<p>Seguimos caminos trazados, hacemos lo que toca y decimos lo que se espera. Pero también existen quienes encuentran ideas en los lugares más inesperados: una canción al conducir, el olor a tierra mojada o una historia que no se olvida.</p>
+<p>Somos quienes llenamos libretas de ideas y bocetos a las tres de la mañana. Imaginamos lo imposible y nos preguntamos constantemente: ¿y si lo hacemos diferente? Entendemos las reglas, exploramos sus límites y las cuestionamos cuando existe una razón para hacerlo.</p>
+<p>Creemos que cada persona tiene su mood y que cada marca merece encontrar el suyo. Escuchamos, compartimos perspectivas y convertimos esa diversidad en ideas que expresan una personalidad propia.</p>
+<p>En Mood no esperamos a que llegue la inspiración. La buscamos, la perseguimos y, cuando la encontramos, hacemos algo con ella.</p>
+<div class="manifesto-end"><strong>Romper para impactar.</strong><span>Break to impact.</span></div>
+</div></div></section>
+<section class="section-block" style="padding-top:10px" id="contacto"><div class="wrap">
+<div class="quote-banner reveal"><div><span class="tag" style="border-color:#ffffff65">08 / Mood</span><h2>Find your mood.<br><span>Make an impact.</span></h2></div><p>Una agencia creativa nacida en noveno ciclo de Diseño Gráfico de la Universidad de Cuenca. Ideas con personalidad, estrategia y propósito.</p></div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><a class="logo" href="#inicio"><span class="logo-mark">m</span>mood.</a><small>© <span id="year"></span> Mood Agencia Creativa · Cuenca, Ecuador</small><div class="footer-links"><a href="#concepto">Concepto</a><a href="#manifiesto">Manifiesto</a><a href="#inicio">Volver arriba ↑</a></div></div></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('navLinks');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+window.addEventListener('pointermove',e=>{document.documentElement.style.setProperty('--mx',e.clientX+'px');document.documentElement.style.setProperty('--my',e.clientY+'px')},{passive:true});
+
+// Gentle glass parallax: keeps the editorial layout calm while adding depth.
+const glassTargets=document.querySelectorAll('.bento-card,.info-card,.value,.editorial-card');
+const finePointer=window.matchMedia('(pointer:fine)').matches;
+if(finePointer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+ glassTargets.forEach(card=>{
+  card.addEventListener('pointermove',e=>{
+   const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+   card.style.setProperty('--shine-x',(x*100)+'%');card.style.setProperty('--shine-y',(y*100)+'%');
+   if(card.classList.contains('bento-card') && !card.classList.contains('photo')) card.style.transform=`perspective(900px) rotateX(${(0.5-y)*3}deg) rotateY(${(x-0.5)*3}deg) translateY(-2px)`;
+  });
+  card.addEventListener('pointerleave',()=>{card.style.transform=''});
+ });
+}
+
+// Reflejo líquido que acompaña suavemente al cursor sobre las superficies de vidrio.
+const glassSurfaces=document.querySelectorAll('.roles-intro,.panel,.manifesto,.quote-banner,.info-card,.value,.role-row');
+if(finePointer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+ glassSurfaces.forEach(surface=>{
+  surface.addEventListener('pointermove',e=>{const r=surface.getBoundingClientRect();surface.style.setProperty('--light-x',((e.clientX-r.left)/r.width*100)+'%');surface.style.setProperty('--light-y',((e.clientY-r.top)/r.height*100)+'%');});
+ });
+}
+
+</script>
+</body>
+</html>
